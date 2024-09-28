@@ -1,0 +1,6 @@
+[submodule "f1-webapp"]
+	path = f1-webapp
+	url = https://github.com/matteonaccarato/f1-webapp
+[submodule "f1-data"]
+	path = f1-data
+	url = https://github.com/matteonaccarato/f1-data
