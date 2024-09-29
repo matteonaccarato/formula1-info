@@ -1,33 +1,29 @@
-# F1-INFO
+# F1-INFO 🏁🏎️
 This project is made of two sections:
-- [F1-WEBAPP](https://github.com/matteonaccarato/f1-webapp) -> Web App with the aim of grouping everything useful about Formula 1
-- [F1-DATA](https://github.com/matteonaccarato/f1-data)  -> Dashboard to Analyze data about Formula 1 - **VIEW HERE [https://f1-data.onrender.com/](https://f1-data.onrender.com/)** 
+- 🛜 [**F1-WEBAPP**](https://github.com/matteonaccarato/f1-webapp) ➡️ Web App with the aim of grouping everything useful about Formula 1
+- 📊 [**F1-DATA**](https://github.com/matteonaccarato/f1-data)  ➡️ Dashboard to Analyze data about Formula 1 - **DEPLOY HERE [https://f1-data.onrender.com/](https://f1-data.onrender.com/)** 
 
 <hr>
 
-# F1-WEBAPP - Quick intro 
+# 🛜 F1-WEBAPP - Quick intro 
 **NB**: **PERSONAL** purposes only
-<hr>
 
 ### What you can do
-- virtually buy products in the **STORE**
-- keep yourself updated with the most recent **NEWS** 
-- navigate in different **STATISTICS**, such as Drivers, Teams, Calendar and GP results (from 1950 to today).
-- if you are an **ADMIN**, you can manage the store and users data, and email the users who subscribed to the newsletter
+🛍️ Virtually buy products in the **STORE** <br>
+📰 Keep yourself updated with the most recent **NEWS** <br>
+🧑‍💼 If you are an **ADMIN**, you can manage the store and users data, and email the users who subscribed to the newsletter <br>
 
 The news, teams and drivers lists are fetched through **web-scraping** <br>
 <hr>
 
 ### HOW
-Back-end: PHP (and PHPMailer) / AWS-S3 / MySQL
+🧑‍💻 Back-end ➡️ PHP (and PHPMailer) / AWS-S3 / MySQL
 <br>
-Front-end: JS / CSS / Bootstrap / HTML
-<hr>
+🧑‍💻 Front-end ➡️ JS / CSS / Bootstrap / HTML
 
-
-### DATA SOURCES:
-- [Formula 1](https://www.formula1.com/)
-- [Open Weather Map](https://openweathermap.org/api)
+### SOURCES
+☀️ [**OpenWeatherMap**](https://openweathermap.org/api) <br>
+🏎️ [**Formula 1**](https://www.formula1.com/) <br>
 
 <hr>
 
@@ -50,14 +46,16 @@ Front-end: JS / CSS / Bootstrap / HTML
 
 <hr>
 
-# F1-DATA - Quick intro
-Dashboard to Analyze data about Formula 1. <br>
-**VIEW HERE [https://f1-data.onrender.com/](https://f1-data.onrender.com/)** <br>
+# 📊 F1-DATA - Quick intro
+Dashboard to Analyze data about Formula 1 <br>
+**💻 DEPLOY [https://f1-data.onrender.com/](https://f1-data.onrender.com/)** <br>
 
+### What you can do
+📊 Navigate through **STATISTICS** (Seasons, Circuits, Drivers, Teams) - from 1950 to today
 <hr>
 
 ### How
-Python
+🧑‍💻 Python
 
 <hr>
 
