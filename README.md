@@ -1,4 +1,4 @@
-# F1-INFO 🏁🏎️
+# FORMULA1-INFO 🏁🏎️
 This project is made of two sections:
 - 🛜 [**F1-WEBAPP**](https://github.com/matteonaccarato/f1-webapp) ➡️ Web App with the aim of grouping everything useful about Formula 1
 - 📊 [**F1-DATA**](https://github.com/matteonaccarato/f1-data)  ➡️ Dashboard to Analyze data about Formula 1 - **DEPLOY HERE [https://f1-data.onrender.com/](https://f1-data.onrender.com/)** 
