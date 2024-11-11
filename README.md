@@ -30,11 +30,10 @@ The news, teams and drivers lists are fetched through **web-scraping** <br>
 #### Home
 ![Home page](https://github.com/matteonaccarato/f1-webapp/blob/main/assets/images/readme/home.png)
 
-![Home page](https://github.com/matteonaccarato/f1-webapp/blob/main/assets/images/readme/home1.png)
 <hr>
 
 #### Circuits
-![Circuits page](https://github.com/matteonaccarato/f1-webapp/blob/main/assets/images/readme/circuits_page.png)
+![Circuits page](https://github.com/matteonaccarato/f1-webapp/blob/main/assets/images/readme/circuits.PNG)
 <hr>
 
 #### Store
