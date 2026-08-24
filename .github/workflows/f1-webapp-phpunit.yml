@@ -1,0 +1,52 @@
+name: f1-webapp PHP test suite
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: dom, curl, mysqli, pdo_mysql
+          tools: composer:v2
+
+      - name: Install PHP dependencies
+        working-directory: f1-webapp
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Start MySQL with Docker Compose
+        run: docker compose -f "f1-webapp/docker-compose.yml" up -d mysql
+
+      - name: Wait for MySQL healthcheck
+        run: |
+          for i in {1..30}; do
+            health=$(docker inspect --format='{{.State.Health.Status}}' f1-webapp-mysql || true)
+            if [ "$health" = "healthy" ]; then
+              echo "MySQL is healthy"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "MySQL did not become healthy in time"
+          docker compose -f "f1-webapp/docker-compose.yml" logs mysql
+          exit 1
+
+      - name: Run PHPUnit
+        working-directory: f1-webapp
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USERNAME: admin
+          DB_PASSWORD: admin
+          DB_DATABASE: f1_webapp
+          DB_PORT: 3306
+        run: vendor/bin/phpunit --configuration phpunit.xml
